@@ -1,0 +1,67 @@
+/* TicketStatus.css */
+
+.ticket-status-container {
+    padding: 20px;
+    background-color: #ced1d4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .ticket-status-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-status-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Only one column now for Remaining Tickets */
+    gap: 20px;
+  }
+  
+  .status-card {
+    background-color: #ffffff;
+    padding: 30px; /* Increased padding for a larger card */
+    border-radius: 12px; /* Larger radius for a more rounded look */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 200px; /* Ensures the card is large enough */
+  }
+  
+  .status-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  .status-card h3 {
+    font-size: 24px; /* Larger title font */
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .status-card p {
+    font-size: 22px; /* Larger font for the ticket number */
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space before the message */
+  }
+  
+  .status-card .message {
+    font-size: 18px; /* Font size for the message */
+    color: #888;
+    font-style: italic;
+  }
+  
+  .status-card.remaining {
+    background-color: #ffe4b3;
+    border: 2px solid #ff9800;
+  }
+  
+  
+  
